@@ -29,15 +29,3 @@ int main()
     }
     std::cout << amicable_num_sum << std::endl;
 }
-
-/*
-for (size_t a{2}; a < n; ++a)
-    {
-        auto const b = d[a];
-        if (b < n && d[b] == a)
-        {
-            amicable_num_sum += a;
-        }
-    }
-
-*/
