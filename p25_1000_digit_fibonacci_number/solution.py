@@ -1,4 +1,8 @@
 def digit_count(n):
+    if not n:
+        return 1
+    if n < 0:
+        n += 2 * n
     ret = 0  # digit count
     while n > 0:
         ret += 1
@@ -6,8 +10,8 @@ def digit_count(n):
     return ret
 
 
-pre = 1 # F_1
-cur = 1 # F_2
+pre = 1  # F_1
+cur = 1  # F_2
 i = 2
 dc = 1
 while dc < 1000:
